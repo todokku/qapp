@@ -88,7 +88,7 @@ class MessageThread(Thread):
             provider = IBMQ.get_provider(hub='ibm-q')
             IBMQ.get_provider(project='main')
             least_busy_device = provider.backends(filters=lambda x: x.configuration().n_qubits >= 5 
-                                               and not x.configuration().simulator)
+                                                  and not x.configuration().simulator)
             backend = least_busy(least_busy_device)
             backend_name = backend.name()
             backend_new_name = provider.get_backend(backend_name)
