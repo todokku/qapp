@@ -4,7 +4,7 @@ QCoin is the worlds FIRST qapp!  A qapp is a full-stack quantum application that
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install QCoin.
 
 ```bash
 pip install -r requirements.txt
