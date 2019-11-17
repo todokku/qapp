@@ -3,8 +3,8 @@
 // *****
 // 
 // Created by Kevin Thomas 11/16/19.
-// Modified by Kevin M. Thomas 11/16/19.
-// CC BY
+// Modified by Kevin Thomas 11/16/19.
+// Apache License, Version 2.0
 // 
 // QCoin is the worlds FIRST qapp!  A qapp is a full-stack quantum
 // application that interfaces directly with the IBMQ Research HQ at
