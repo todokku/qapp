@@ -2,6 +2,10 @@
 
 QCoin is the worlds FIRST qapp!  A qapp is a full-stack quantum application that interfaces directly with the IBMQ Research HQ at the Thomas J. Watson Research Center in the cloud.  QCoin is a heads or tails game to which the user chooses either heads or tails when the game begins.  The application then connects to a REAL IBMQ quantum computer to which it will put qubit 1 into superposition and then entangle two qubits and finally measure the qubits, irrevocably disturbing the superposition state and forcing a classical 0 or 1 as output to determine the games result.
 
+## OFFICIAL PRODUCT DEMO VIDEO
+
+[youtube.com](https://youtu.be/BB7TDDKb-F4/)
+
 ## Installation
 
 Navigate to [python.org](https://www.python.org/downloads/) to install Python 3+.
