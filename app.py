@@ -116,19 +116,19 @@ class MessageThread(Thread):
             message = 'Tails has {} counts out of 1000 shots.'.format(str_tails)
             socketio.emit('newmessage', {'message': message}, namespace='/temp')
             sleep(self.delay)
-            if choice == 'heads' and heads >= 500:
+            if choice == 'heads' and heads > tails:
                 message = 'YOU WON!'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
-            elif choice == 'tails' and tails >= 500:
+            elif choice == 'tails' and tails > heads:
                 message = 'YOU WON!'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
-            elif choice == 'heads' and heads < 500:
+            elif choice == 'heads' and heads < tails:
                 message = 'YOU LOST!'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
-            elif choice == 'tails' and tails < 500:
+            elif choice == 'tails' and tails < heads:
                 message = 'YOU LOST!'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
