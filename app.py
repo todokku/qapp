@@ -55,7 +55,7 @@ class MessageThread(Thread):
             socketio.emit('newmessage', {'message': message}, namespace='/temp')
             sleep(self.delay)
 
-            message = 'Creating circuit of 2 quantum and classical registers.'
+            message = 'Creating circuit of two quantum registers and two classical registers.'
             socketio.emit('newmessage', {'message': message}, namespace='/temp')
             sleep(self.delay)
             shots = 1000
@@ -63,7 +63,7 @@ class MessageThread(Thread):
             cr = ClassicalRegister(2)
             circuit = QuantumCircuit(qr, cr)
 
-            message = 'Initializing superposition and quantum entanglement.'
+            message = 'Initializing quantum superposition and quantum entanglement (SPOOKY AT A DISTANCE).'
             socketio.emit('newmessage', {'message': message}, namespace='/temp')
             sleep(self.delay)
             circuit.h(qr[0])
@@ -80,8 +80,7 @@ class MessageThread(Thread):
             try:
                 IBMQ.load_account()
             except:
-                pass
-                message = 'Please ensure you have your IBMQ account set up.'
+                message = 'Please ensure you have your IBM Q Experience account setup properly.  Visit https://github.com/mytechnotalent/qapp for details of how to properly setup your IBM Q Experience account.'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
                 temp_disconnect()
