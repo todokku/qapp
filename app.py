@@ -125,7 +125,11 @@ class MessageThread(Thread):
                 message = 'YOU WON!'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
-            else:
+            elif choice == 'heads' and heads < 500:
+                message = 'YOU LOST!'
+                socketio.emit('newmessage', {'message': message}, namespace='/temp')
+                sleep(self.delay)
+            elif choice == 'tails' and tails < 500:
                 message = 'YOU LOST!'
                 socketio.emit('newmessage', {'message': message}, namespace='/temp')
                 sleep(self.delay)
