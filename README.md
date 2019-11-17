@@ -54,4 +54,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[CC BY](https://choosealicense.com/licenses/cc-by-4.0/)
+[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0/)
