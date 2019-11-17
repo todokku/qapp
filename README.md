@@ -4,28 +4,54 @@ QCoin is the worlds FIRST qapp!  A qapp is a full-stack quantum application that
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install QCoin.
+Navigate to [python.org](https://www.python.org/downloads/) to install Python 3+.
+
+Navigate to [git-scm.com](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git) to install Git.
+
+Open a terminal window and type the below command to clone the GitHub QApp repo.
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/mytechnotalent/qapp.git
+cd qapp
 ```
 
-## Create IBMQ Account
+With the terminal window open, type the below command to install all of the dependencies.
 
 ```bash
-https://qiskit.org/documentation/install.html#install-access-ibm-q-devices-label
+pip3 install -r requirements.txt
+```
+
+## Create and IBM Q Experience Account
+
+Navigate to [quantum-computing.ibm.com](https://quantum-computing.ibm.com/) and create a new account.
+
+Navigate to [quantum-computing.ibm.com/account](https://quantum-computing.ibm.com/account) and click the 'Copy token' button in blue to obtain your API.  Open up a text editor and paste in the token temporarily.
+
+Open a terminal window and type the below command to setup your API key with your software.  Make sure you replace the 'MY_API_TOKEN' below with your API key you have stored in your text editor.  Be sure to paste the API key between the single quotes as shown below.
+
+```python
+python3
+>>> from qiskit import IBMQ
+>>> IBMQ.save_account('MY_API_TOKEN')
+>>> quit()
 ```
 
 ## Run Application
+
+With the terminal window open, type the below command to run your qapp.
 
 ```bash
 python app.py
 ```
 
+Navigate to [localhost:5000](http://localhost:5000) to open your qapp in a web browser of your choice.
+
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [CC BY](https://choosealicense.com/licenses/cc-by-4.0/)
