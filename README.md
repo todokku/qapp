@@ -44,7 +44,7 @@ With the terminal window open, type the below command to run your qapp.
 python app.py
 ```
 
-Navigate to [localhost:5000](http://localhost:5000) to open your qapp in a web browser of your choice.
+Navigate to [localhost:5000](http://localhost:5000) to launch your qapp in your default web browser.
 
 ## Contributing
 
