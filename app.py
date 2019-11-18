@@ -3,7 +3,7 @@
 # *****
 # 
 # Created by Kevin Thomas 11/16/19.
-# Modified by Kevin Thomas 11/17/19.
+# Modified by Kevin Thomas 11/18/19.
 # Apache License, Version 2.0
 # 
 # QCoin is the worlds FIRST qapp!  A qapp is a full-stack quantum
@@ -134,9 +134,9 @@ class MessageThread(Thread):
             except NameError:
                 pass
 
-            message = 'Heads has {} counts.'.format(str_heads)
+            message = 'Heads has {} counts out of 1000 shots.'.format(str_heads)
             socketio.emit('newmessage', {'message': message}, namespace='/temp')
-            message = 'Tails has {} counts.'.format(str_tails)
+            message = 'Tails has {} counts out of 1000 shots.'.format(str_tails)
             socketio.emit('newmessage', {'message': message}, namespace='/temp')
             sleep(self.delay)
             # Logic to determine outcome of the game and present to the results
