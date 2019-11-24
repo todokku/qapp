@@ -8,7 +8,7 @@ QCoin is the worlds FIRST qapp!  A qapp is a full-stack quantum application that
 
 ## OFFICIAL PRODUCT TUTORIAL
 
-[linkedin.com](https://www.linkedin.com/pulse/quantum-computing-1-qcoin-birth-qapp-kevin-thomas/)
+[medium.com](https://medium.com/@mytechnotalent/quantum-computing-1-qcoin-the-birth-of-the-qapp-88103f3921be/)
 
 ## Installation
 
