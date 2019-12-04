@@ -49,7 +49,7 @@ python3
 With the terminal window open, type the below command to run your qapp.
 
 ```bash
-python app.py
+python3 app.py
 ```
 
 Navigate to [localhost:5000](http://localhost:5000) to launch your qapp in your default web browser.
